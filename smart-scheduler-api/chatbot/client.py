@@ -149,7 +149,7 @@ async def get_bot_response(user_message: str, context_messages: list = None):
     messages.append({"role": "user", "content": user_message})
 
     payload = {
-        "model": "gemma2:2b",
+        "model": "gemma2:9b",
         "messages": messages,
         "stream": False
     }

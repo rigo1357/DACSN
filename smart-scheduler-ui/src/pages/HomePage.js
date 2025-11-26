@@ -136,7 +136,9 @@ function HomePage() {
                 whileHover={{ scale: 1.02 }}
               >
                 <span className="feature-icon">{feature.icon}</span>
+                <Link to="/login">
                 <h3 className="feature-title">{feature.title}</h3>
+                </Link>
                 <p className="feature-description">{feature.description}</p>
               </motion.div>
             ))}
@@ -164,7 +166,6 @@ function HomePage() {
             <span className="stat-label">Tự động hóa</span>
           </motion.div>
           <motion.div
-            Link to="/login"
             className="stat-item"
             initial={{ opacity: 0, scale: 0.8 }}
             whileInView={{ opacity: 1, scale: 1 }}

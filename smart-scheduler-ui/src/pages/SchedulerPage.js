@@ -714,7 +714,7 @@ function SchedulerForm({ onGenerate }) {
         <div className="subject-list-container">
           {isLoadingCourses ? <p>Đang tải danh sách môn học...</p> :
             coursesError ? <p style={{ color: '#f87171' }}>{coursesError}</p> :
-              filteredSubjects.length === 0 ? <p style={{ color: '#94a3b8' }}>Không tìm thấy môn học.</p> :
+              filteredSubjects.length === 0 ? <p style={{ color: '#9499b8ff' }}>Không tìm thấy môn học.</p> :
                 filteredSubjects.map((course) => {
                   // Kiểm tra xem môn này đã được chọn chưa (so sánh theo originalCode)
                   const courseOriginalCode = course.metadata?.original_code ||
